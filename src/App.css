@@ -1,15 +1,10 @@
-.vertical{
+.vertical {
   width: 2px;
   height: auto;
   background-color: whitesmoke;
 }
-.App{
+.App {
   display: flex;
   margin-left: 5rem;
   margin-right: 5rem;
-    
- 
-}
-Newt{
-  
 }

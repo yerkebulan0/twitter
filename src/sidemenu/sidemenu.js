@@ -1,5 +1,6 @@
 import "../sidemenu/sidemenu.css";
 import { BOOKMARKS_SVG, EXPLORE_SVG, HOME_SVG, MESSAGES_SVG, NOTIFICATIONS_SVG } from "../svg";
+import Menu from "./menu";
 export default function Sidemenu() {
     const menu = [
         {
@@ -24,14 +25,10 @@ export default function Sidemenu() {
         }
     ]
   return (
-    <div className="w-25">
-      <img className="img" src={require("../images/twitter.png")} />
-        {menu.map((item,index)=>(
-            <div className="block">
-            <div className="svg">{item.icon}</div>
-            <p className="p">{item.name}</p>
-          </div>
-        ))}
+    <div className="side">
+      <div className="tw">
+      <img className="img" src={require("../images/twitter.png")} /></div>
+        {menu.map((item,index)=><Menu item={item} key={index}/>)}
       
     </div>
   ); 

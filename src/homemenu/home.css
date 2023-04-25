@@ -1,0 +1,59 @@
+.home {
+  margin: 0;
+  padding-top: 1rem;
+  width: 37.5rem;
+  height: 53px;
+  font-size: 20px;
+  font-weight: 650;
+  padding-left: 16px;
+  
+  display: flex;
+  align-items: center;
+}
+.img2{
+    width: 50px;
+    height: 50px;
+    border-radius: 50px;
+    margin-top: 4px;
+}
+
+.input{
+    border: none;
+    font-size: 18px;
+    display: flex;
+    outline: none;
+   
+    
+    
+}
+.bottomMenu{
+    display: flex;
+    gap: 4px;
+    padding-left: 76px;
+}
+.bottomMenu button{
+    border-radius: 20px;
+    border: none;
+    background-color:rgb(29, 155, 240);
+    padding: 7px 20px 7px 20px;
+    font-size: 15px;
+    
+    margin-left: 300px;
+    
+    
+}
+
+.newt{
+    width: 100%;
+    
+    
+
+    border-bottom: 1px solid whitesmoke     ; 
+    border-top: 1px solid whitesmoke     ;    
+    padding-bottom: 10px;
+}
+.placeHolder{
+    display: flex;
+    gap: 13px;
+    padding: 0px 16px 0px 16px;
+}

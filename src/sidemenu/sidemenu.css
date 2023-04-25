@@ -12,13 +12,23 @@
 .block {
   display: flex;
   gap: 20px;
-    padding-top: 20px;
-  align-self: center;
+  padding: 12px 0px 12px 0px;
+  
 }
 .p {
   font-size: 18px;
   font-weight: 500;
 }
-.w-25 {
+.side {
+  height: 100%;
+  width: 259px;
+  display: flex;
+  flex-direction: column;
+  justify-content: flex-start;
+  
     
+}
+.tw{
+  width: 56px;
+  height: 52px;
 }

@@ -1,6 +1,12 @@
-
-export default function Homemenu(){
-    return(
-        <div className="w-50">home menu</div>
-    );
+import "../homemenu/home.css";
+import Newt from "./newtwit";
+import Tweetslist from "./Tweet";
+export default function Homemenu() {
+  return (
+    <div className="middle">
+      <div className="home">Home</div>
+      <Newt/>
+      <Tweetslist/>
+    </div>
+  );
 }
