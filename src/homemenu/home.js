@@ -1,12 +1,15 @@
 import "../homemenu/home.css";
 import Newt from "./newtwit";
-import Tweetslist from "./Tweet";
+import Tweet from "./Tweet";
+import TweetsList from "./Tweet";
 export default function Homemenu() {
   return (
     <div className="middle">
       <div className="home">Home</div>
       <Newt/>
-      <Tweetslist/>
+      <TweetsList/> 
+      
+      
     </div>
   );
 }

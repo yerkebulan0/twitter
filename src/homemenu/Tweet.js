@@ -1,8 +1,6 @@
 export default function Tweet(tweet) {
-  console.log(tweet);
-
   return (
-    <div className="mt-3, mx-3">
+    <div className="mt-3 mx-3">
       <p className="mx-5" style={{ fontSize: 13, fontWeight: "600" }}>
         You might like!<span style={{ color: "blue" }}>See more</span>{" "}
       </p>
@@ -14,6 +12,10 @@ export default function Tweet(tweet) {
         <div>
           <p>{tweet.authorName}</p>
           <p>{tweet.userName}</p>
+          <p>{tweet.content}</p>
+          <p>{tweet.replies}</p>
+          <p>{tweet.retweets}</p>
+          <p>{tweet.likes}</p>
         </div>
       </div>
     </div>
