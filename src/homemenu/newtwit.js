@@ -1,4 +1,4 @@
-import { Home_svg } from "../images/svg.js";
+import { HomeIcon } from "../icons/index.js";
 import { Second_svg } from "../images/svg.js";
 import { Th_svg } from "../images/svg.js";
 import { Fr_svg } from "../images/svg.js";
@@ -13,7 +13,7 @@ export default function Newt() {
         <input className="input" placeholder="What's happening?" />
       </div>
       <div className="bottomMenu">
-        <div>{Home_svg} </div>
+        <div><HomeIcon /></div>
         <div>{Second_svg}</div>
         <div> {Th_svg}</div>
         <div>{Fr_svg}</div>
