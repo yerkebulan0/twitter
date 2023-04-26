@@ -3,8 +3,9 @@ import Sidemenu from "./sidemenu/sidemenu";
 import Homemenu from "./homemenu/home";
 
 function App() {
+
   return (
-    <div className="App">
+    <div className="App" >
       <Sidemenu />
 
       <div className="vertical"></div>
