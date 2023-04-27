@@ -1,9 +1,9 @@
 import { HomeIcon } from "../icons/index.js";
-import { Second_svg } from "../images/svg.js";
-import { Th_svg } from "../images/svg.js";
-import { Fr_svg } from "../images/svg.js";
-import { Fif_svg } from "../images/svg.js";
-import { Six_svg } from "../images/svg.js";
+import { IconFig } from "../icons/index.js";
+import { Trird } from "../icons/index.js";
+import { Four } from "../icons/index.js";
+import { Fif } from "../icons/index.js";
+import { Si } from "../icons/index.js";
 
 export default function Newt() {
   return (
@@ -14,11 +14,11 @@ export default function Newt() {
       </div>
       <div className="bottomMenu">
         <div><HomeIcon /></div>
-        <div>{Second_svg}</div>
-        <div> {Th_svg}</div>
-        <div>{Fr_svg}</div>
-        <div>{Fif_svg}</div>
-        <div>{Six_svg}</div>
+        <div><IconFig/></div>
+        <div> <Trird/>  </div>
+        <div><Four/></div>
+        <div><Fif/></div>
+        <div><Si/></div>
         <button>Tweet</button>
       </div>
     </div>
