@@ -1,3 +1,6 @@
+import { Comment } from "../icons/index.js";
+import { Repost } from "../icons/index.js";
+import { Like } from "../icons/index.js";
 export default function Tweet(tweet) {
   return (
     <div className="mt-3 mx-3">
@@ -9,13 +12,25 @@ export default function Tweet(tweet) {
           style={{ width: 50, height: 50, borderRadius: 50 }}
           src={require("../images/tweet.JPG")}
         />
-        <div>
-          <p>{tweet.authorName}</p>
-          <p>{tweet.userName}</p>
-          <p>{tweet.content}</p>
-          <p>{tweet.replies}</p>
-          <p>{tweet.retweets}</p>
-          <p>{tweet.likes}</p>
+        <div className="midC">
+          <div className="d-flex" style={{ gap: 10 }}>
+            <p className="authorname">{tweet.authorName}</p>
+            <p className="username">{tweet.userName}</p>
+          </div>
+          <p className="content">{tweet.content}</p>
+          <div className="botM">
+            <p className="botDetails">
+              <Comment className="iconM" />
+              {tweet.replies}
+            </p>
+            <p className="botDetails">
+              <Repost className="iconM"  />
+              {tweet.retweets}
+            </p>
+            <p className="botDetails">
+              <Like className="iconM"  /> {tweet.likes}
+            </p>
+          </div>
         </div>
       </div>
     </div>
