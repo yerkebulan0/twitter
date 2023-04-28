@@ -17,7 +17,7 @@ export default function Newt() {
         <div><IconFig/></div>
         <div> <Trird/>  </div>
         <div><Four/></div>
-        <div><Fif/></div>
+        <div><Fif/></div> 
         <div><Si/></div>
         <button>Tweet</button>
       </div>

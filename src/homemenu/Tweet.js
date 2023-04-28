@@ -10,7 +10,7 @@ export default function Tweet(tweet) {
       <div className="d-flex">
         <img
           style={{ width: 50, height: 50, borderRadius: 50 }}
-          src={require("../images/tweet.JPG")}
+          src={tweet.img}
         />
         <div className="midC">
           <div className="d-flex" style={{ gap: 10 }}>
