@@ -1,3 +1,4 @@
+import { useState } from "react";
 import { HomeIcon } from "../icons/index.js";
 import { IconFig } from "../icons/index.js";
 import { Trird } from "../icons/index.js";
@@ -5,12 +6,25 @@ import { Four } from "../icons/index.js";
 import { Fif } from "../icons/index.js";
 import { Si } from "../icons/index.js";
 
+
+
+
 export default function Newt() {
+  const [message, setMessage] = useState('');
+  const handleChange = (event) => {
+   setMessage(event.target.value);
+   
+  };
+  console.log(message)
+ 
   return (
     <div className="newt">
       <div className="placeHolder">
         <img className="img2" src={require("../homemenu/img2.JPG")} />
-        <input className="input" placeholder="What's happening?" />
+        <input className="input" placeholder="What's happening?"  type="text"
+        id="message"
+        name="message"
+        onChange={handleChange} />
       </div>
       <div className="bottomMenu">
         <div><HomeIcon /></div>
@@ -19,7 +33,7 @@ export default function Newt() {
         <div><Four/></div>
         <div><Fif/></div> 
         <div><Si/></div>
-        <button>Tweet</button>
+        <button >Tweet</button>
       </div>
     </div>
   );
