@@ -1,10 +1,11 @@
-.vertical {
+.App {
+  font-family: 'Roboto', sans-serif;
+  margin: auto;
+  width: 80%;
+}
+
+.vertical-divider {
   width: 2px;
   height: auto;
   background-color: whitesmoke;
-}
-.App {
-  display: flex;
-  margin-left: 5rem;
-  margin-right: 5rem;
 }
