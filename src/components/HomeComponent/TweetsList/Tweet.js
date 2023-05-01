@@ -3,6 +3,7 @@ import { COMMENTS, LIKES, RETWEETS, SHARE, DELETE } from '../images';
 
 export default function Tweet( { tweet, deleteTweet }){
     const [title, setTitle] = useState(tweet.content);
+    
 
     return (
         <div className='mt-3 px-3'  style={{borderBottom: '2px solid whitesmoke'}}>

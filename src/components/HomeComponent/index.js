@@ -123,7 +123,7 @@ class Home extends React.Component {
     }
  
     render(){
-        const { tweets, content } = this.state;
+        const { tweets, content } = this.state; 
 
         return(
             <div className="w-50 mt-3">
