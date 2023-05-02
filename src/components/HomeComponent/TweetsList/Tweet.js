@@ -22,6 +22,7 @@ export default function Tweet( { tweet, deleteTweet }){
                         <p>{title.length>200 ? title.slice(0, 200) + '...' : title}</p>
                     </div>
                 </div>
+               
                 <button onClick={()=>deleteTweet(tweet.id)} style={{width: 35, height: 35, border:'none', backgroundColor:'transparent'}}>
                     {DELETE}
                 </button>
