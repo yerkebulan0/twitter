@@ -26,9 +26,10 @@
     padding: 12px 0px 12px 16px;
 }
 .news{
-    height: 82px;
+    
     margin-left: 20px;
     gap: 2px;
+    margin-bottom: 5px;
 }.news p{
     font-size: 13px;
     margin: 0;
