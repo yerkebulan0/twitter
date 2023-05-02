@@ -3,8 +3,8 @@ import { COMMENTS, LIKES, RETWEETS, SHARE, DELETE } from '../images';
 
 export default function Tweet( { tweet, deleteTweet }){
     const [title, setTitle] = useState(tweet.content);
+    const [count ,setCount] = useState(0);
     
-
     return (
         <div className='mt-3 px-3'  style={{borderBottom: '2px solid whitesmoke'}}>
             <p className='mx-5 d-flex' style={{fontSize:12, fontWeight:'600'}}>
@@ -37,8 +37,8 @@ export default function Tweet( { tweet, deleteTweet }){
                         <p className='px-1'>{tweet.retweets}</p>
                     </div>
                     <div className='d-flex'>
-                        <div style={{width:20, height:20}}>{LIKES}</div>
-                        <p className='px-1'>{tweet.likes}</p>
+                        <div style={{width:20, height:20}} onClick={()=> setCount(count +1)} >{LIKES}</div>
+                        <p className='px-1'>{count}</p>
                     </div>
                     <div className='d-flex'>
                         <div style={{width:20, height:20}}>{SHARE}</div>
