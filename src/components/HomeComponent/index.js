@@ -103,7 +103,7 @@ class Home extends React.Component {
         }
 
         this.setState({
-            tweets: [...this.state.tweets, newTweet ],
+            tweets: [newTweet, ...this.state.tweets ],
             content: ''
         })
     }
